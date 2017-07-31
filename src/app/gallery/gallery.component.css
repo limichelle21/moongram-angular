@@ -1,0 +1,57 @@
+body,
+h1,
+p {
+  font-family: "Shadows Into Light","Lato","Raleway";
+}
+
+ul {
+  padding: 0;
+  width: 1020px;
+  margin: 20px auto
+}
+
+li {
+  display: inline;
+}
+
+.tn {
+ margin: 2px 0px;
+ box-shadow:#999 1px 1px 3px 1px;
+ cursor: pointer
+  }
+
+.modal-dialog {
+  width: 70%;
+}
+
+.modal-body {
+  background-color: black;
+}
+
+.modal-body > .img-responsive {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.selectedImage {
+  width: 100%;
+	position: relative;
+}
+
+.caption > p {
+  position: absolute;
+  top: 89%;
+  left: 0;
+  width: 100%;
+}
+
+p span {
+  color: black;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  background: rgb(255, 255, 255); /* fallback color */
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+}
