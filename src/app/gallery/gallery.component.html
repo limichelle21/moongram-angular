@@ -1,21 +1,23 @@
 <div class="modal fade" id="selectedImageModal" >
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-body">
-          <div class="selectedImage" *ngIf="selectedImage">
-            <img src="{{selectedImage.url}}" class="img-responsive" >
-            <div class="caption">
-              <p><span> {{selectedImage.caption}} </span></p>
-            </div>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="selectedImage" *ngIf="selectedImage">
+          <img src="{{selectedImage.url}}" class="img-responsive" >
+          <div class="caption">
+            <p><span> {{selectedImage.caption}} </span></p>
           </div>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-<ul id="thumbnailsList">
-   <li *ngFor="let image of datasource" >
-      <img src="{{image.url}}" class="tn" width="35%"
-	  data-toggle="modal" data-target="#selectedImageModal"
-              (click)=setSelectedImage(image)>
-   </li>
-</ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container fluid">
+	<ul id="thumbnailsList">
+	   <li *ngFor="let image of datasource" >
+	      <img src="{{image.url}}" class="tn" width="30%"
+		  data-toggle="modal" data-target="#selectedImageModal"
+	              (click)=setSelectedImage(image)>
+	   </li>
+	</ul>
+</div>

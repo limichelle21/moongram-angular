@@ -6,7 +6,6 @@ p {
 
 ul {
   padding: 0;
-  width: 1020px;
   margin: 20px auto
 }
 
@@ -52,6 +51,6 @@ p span {
   letter-spacing: 2px;
   background: rgb(255, 255, 255); /* fallback color */
   background: rgba(255, 255, 255, 0.8);
-  padding: 10px;
+  padding: 5px;
   border-radius: 10px;
 }
