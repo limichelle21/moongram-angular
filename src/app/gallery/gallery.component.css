@@ -20,11 +20,11 @@ li {
   }
 
 .modal-dialog {
-
+  width: 70%;
 }
 
 .modal-body {
-  
+
 }
 
 .modal-body > .img-responsive {
