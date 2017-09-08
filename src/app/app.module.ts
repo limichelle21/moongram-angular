@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
+import { AngularFireModule } from 'angularfire2';
+import 'firebase/storage'
+import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
 import { GalleryComponent } from './gallery/gallery.component';
 
@@ -18,8 +20,10 @@ const appRoutes: Routes = [
     BrowserModule,
     RouterModule.forRoot(
       appRoutes,
-      { enableTracing: true } 
-    )
+      { enableTracing: true }
+    ),
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireStorageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
