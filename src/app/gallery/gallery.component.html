@@ -14,8 +14,8 @@
 </div>
 <div class="container fluid">
 	<ul id="thumbnailsList">
-	   <li *ngFor="let image of images | async" >
-	      <img [src]="image" class="tn" width="30%"
+	   <li *ngFor="let image of datasource" >
+	      <img src="{{image.url}}" class="tn" width="30%"
 		  data-toggle="modal" data-target="#selectedImageModal"
 	              (click)=setSelectedImage(image)>
 	   </li>
