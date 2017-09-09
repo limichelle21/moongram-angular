@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { FirebaseApp } from 'angularfire2';
-import * as firebase from 'firebase/app';
 
 @Component({
   selector: 'app-root',
