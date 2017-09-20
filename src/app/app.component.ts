@@ -13,7 +13,11 @@ images;
 
 constructor() {
   this.images = [
-    {"url":"/assets/images_raw/Cambodia.jpg", "caption":"Siem Reap, Cambodia"},
+    {
+      "url":"/assets/images_raw/Cambodia.jpg",
+      "url_thumb": "/assets/images_raw/Cambodia_thumb.jpg",
+      "caption":"Siem Reap, Cambodia"
+    },
     {"url":"/assets/images_raw/China.jpg", "caption":"Beijing, China"},
     {"url":"/assets/images_raw/Colombia.jpg", "caption":"Medellin, Colombia"},
     {"url":"/assets/images_raw/CostaRica.jpg", "caption":"Manuel Antonio, Costa Rica"},
